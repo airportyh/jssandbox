@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <title>JS Sandbox</title>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/codemirror/lib/codemirror.js"></script>
+  <link rel="stylesheet" href="/assets/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/assets/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="/assets/codemirror/mode/css/css.js"></script>
+  <script src="/assets/codemirror/mode/xml/xml.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="toolbar">
+      <button id="runButton">Save and Run (Cmd-Enter)</button>
+      <select id="codeSelector">
+        <option value="html">HTML</option>
+        <option value="js">JavaScript</option>
+        <option value="css">CSS</option>
+      </select>
+    </div>
+    <div id="content-panel">
+      <div id="left-panel">
+      </div>
+      <div id="right-panel">
+        <iframe id="iframe"></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/sandbox.js"></script>
+</body>
+</html>
